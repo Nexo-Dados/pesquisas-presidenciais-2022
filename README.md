@@ -2,6 +2,20 @@
 
 Repositório para o gráfico de pesquisas eleitorais da newsletter 'Durma com essa', do Nexo Jornal.
 
+## Dados
+
+
+| Candidato  |  Percentual  |
+| ------------------- | ------------------- |
+|  Lula (PT) |  42,6% |
+|  Bolsonaro (PL) | 34,0% |
+|  Ciro (PDT) |  7,2% |
+|  Outros | 6,8% |
+|  Brancos, nulos, indecisos |  6,8% |
+
+Atualizado em **16/08/2022**.
+
+
 ## Metodologia
 
 A metodologia de coleta e agregação é detalhada aqui. Qualquer alteração no procedimento também será registrada nesta página.
@@ -18,7 +32,7 @@ Foram consideradas as pesquisas, com registro no TSE, publicadas ao longo do ano
 
 A princípio, todos os institutos foram considerados, independente do tamanho amostral e método de entrevista. Algumas considerações:
 
-* A pesquisa do Sigma está na tabela mas não é utilizada nos gráficos. Os resultados deste instituto são completamente divergentes dos demais. Os testes realizados pelo Nexo de viés dos institutos justifica a exclusão dessa pesquisa.
+* A pesquisa do Sigma está na tabela mas não é utilizada nos gráficos. Os resultados deste instituto são completamente divergentes dos demais. Os testes realizados pelo **Nexo** de viés dos institutos justifica a exclusão dessa pesquisa.
 
 * As pesquisas dos institutos Gerp e Futura apresentam o candidato Jair Bolsonaro (PL) consistentemente mais bem posicionado nas pesquisas do que os demais institutos. No entanto, um critério objetivo para retirar essas pesquisas iria remover as pesquisas de institutos, como o Datafolha, que apontam Lula (PT) melhor do que nos demais institutos. Por ora, essas pesquisas foram todas mantidas.
 
