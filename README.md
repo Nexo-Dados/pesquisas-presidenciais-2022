@@ -22,16 +22,17 @@ Atualizado em **16/08/2022**.
 
 | Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
-| Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
-| Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
-| Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
+| 15/08/22 | Ipec | BR-03980/2022 |  44%  | 32% | 6% | 3% | 15% |
+| 14/08/22 | FSB |  BR-00603/2022 |  45%  | 34% | 8% | 5% | 8% |
+| 07/08/22 | FSB | BR-08028/2022 |  41%  | 34% | 7% | 7% | 11% |
+| 05/08/22 | Gerp | BR-009327/2022 |  38%  | 38% | 10% | 7% | 7% |
+| 02/08/22 | PoderData| BR-08398/2022 | 43% | 35% | 5% | 11% | 6% |
 
 Valores podem ser arredondados. 
 
 ### Dados completos
 
-Acesse todos os registros no arquivo [pesquisas_1t.csv]("link aqui").
+Acesse todos os registros no arquivo [pesquisas_1t.csv](https://github.com/Nexo-Dados/pesquisas-presidenciais-2022/blob/main/pesquisas_1t.csv).
 
 
 ## Metodologia
