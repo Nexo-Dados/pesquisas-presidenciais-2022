@@ -13,7 +13,7 @@ Repositório para o gráfico de pesquisas eleitorais da newsletter 'Durma com es
 |  Bolsonaro (PL) | 34,0% |
 |  Ciro (PDT) |  7,2% |
 |  Outros | 6,8% |
-|  Brancos, nulos, indecisos |  6,8% |
+|  Brancos, nulos, indecisos |  9,5% |
 
 Atualizado em **16/08/2022**.
 
