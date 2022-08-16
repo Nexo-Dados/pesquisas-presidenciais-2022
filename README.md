@@ -5,6 +5,8 @@ Repositório para o gráfico de pesquisas eleitorais da newsletter 'Durma com es
 ## Dados
 
 
+### Resultado agregado
+
 | Candidato  |  Percentual  |
 | ------------------- | ------------------- |
 |  Lula (PT) |  42,6% |
@@ -14,6 +16,22 @@ Repositório para o gráfico de pesquisas eleitorais da newsletter 'Durma com es
 |  Brancos, nulos, indecisos |  6,8% |
 
 Atualizado em **16/08/2022**.
+
+
+### Pesquisas mais recentes
+
+| Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
+| Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
+| Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
+| Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
+
+Valores podem ser arredondados. 
+
+### Dados completos
+
+Acesse todos os registros no arquivo [pesquisas_1t.csv]("link aqui").
 
 
 ## Metodologia
