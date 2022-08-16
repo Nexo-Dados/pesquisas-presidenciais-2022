@@ -55,7 +55,8 @@ results %>%
   scale_x_date(date_breaks = "1 month", date_labels = "%m/%y") +
   theme_minimal()
 
-ggsave(paste0("./pdf/", Sys.time(), "_NL.pdf"), width=8, height=8)
+ggsave(paste0("./pdf/", 
+              str_replace_all(Sys.time(), ":", "_"), "_NL.pdf"), width=8, height=8)
 
 
 #-- resultados gerais
