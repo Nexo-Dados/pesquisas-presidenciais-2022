@@ -15,7 +15,7 @@ Repositório para o gráfico de pesquisas eleitorais da newsletter 'Durma com es
 |  Outros | 6,3% |
 |  Brancos, nulos, indecisos |  9,3% |
 
-Atualizado em **18/08/2022**.
+Atualizado em **19/08/2022**.
 
 
 ### Pesquisas mais recentes
