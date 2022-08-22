@@ -16,9 +16,11 @@ span=.90
 
 #-- gerar estimativas
 results <- pesq %>%
+  drop_na() %>% 
   mutate(Tebet = replace_na(Tebet, 0)) %>% 
   mutate(Data = as.Date(Data),
          Outros = Tebet+Outros) %>% 
+  select(-Tebet) %>% 
   pivot_longer(cols=c(Lula:Ciro, Outros:BNI)) %>% 
   mutate(value = value/100) %>% 
   # retirar institutos de pesquisa
