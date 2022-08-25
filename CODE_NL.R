@@ -24,7 +24,7 @@ results <- pesq %>%
   pivot_longer(cols=c(Lula:Ciro, Outros:BNI)) %>% 
   mutate(value = value/100) %>% 
   # retirar institutos de pesquisa
-  filter(!(Instituto%in%c("Sigma"))) %>% 
+  filter(!(Instituto%in%c("Sigma", "Brasmarket"))) %>% 
   mutate(Data=as.numeric(Data)) %>% 
   nest(-name) %>%
   mutate(

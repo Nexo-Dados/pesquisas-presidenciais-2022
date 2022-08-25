@@ -9,13 +9,13 @@ Repositório para o gráfico de pesquisas eleitorais da newsletter 'Durma com es
 
 | Candidato  |  Percentual  |
 | ------------------- | ------------------- |
-|  Lula (PT) |  43,4% |
-|  Bolsonaro (PL) | 34,6% |
-|  Ciro (PDT) |  6,7% |
+|  Lula (PT) |  43,8% |
+|  Bolsonaro (PL) | 35,1% |
+|  Ciro (PDT) |  6,9% |
 |  Outros | 6,4% |
-|  Brancos, nulos, indecisos |  8,9% |
+|  Brancos, nulos, indecisos |  43,8% |
 
-Atualizado em **24/08/2022**.
+Atualizado em **25/08/2022**.
 
 
 ### Pesquisas mais recentes
@@ -29,6 +29,8 @@ Atualizado em **24/08/2022**.
 | 14/08/22 | PoderData |  BR-02548/2022       |  44%  | 37% | 6% | 6% | 7% |
 
 Valores podem ser arredondados. 
+
+Atualizado em **24/08/2022**.
 
 ### Dados completos
 
