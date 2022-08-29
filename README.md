@@ -36,7 +36,6 @@ Atualizado em **29/08/2022**.
 
 Acesse todos os registros no arquivo [pesquisas_1t.csv](https://github.com/Nexo-Dados/pesquisas-presidenciais-2022/blob/main/pesquisas_1t.csv).
 
-
 ## Metodologia
 
 A metodologia de coleta e agregação é detalhada aqui. Qualquer alteração no procedimento também será registrada nesta página.
