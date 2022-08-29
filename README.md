@@ -22,15 +22,15 @@ Atualizado em **29/08/2022**.
 
 | Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 28/08/22 | FSB | BR-03138/2022 |  43%  | 36% | 9% | 5% | 7% |
+| 24/08/22 | Altas/Intel | BR-03138/2022 |  47%  | 38% | 6% | 7% | 2% |
+| 24/08/22 | Ideia Big Data | BR-03138/2022 |  44%  | 36% | 9% | 6% | 5% |
 | 20/08/22 | Paraná Pesq. | BR-03138/2022 |  42%  | 37% | 7% | 4% | 10% |
 | 20/08/22 | FSB | BR-00244/2022 |  45%  | 36% | 6% | 3% | 5% |
-| 16/08/22 | Datafolha | BR-08028/2022 |  47%  | 32% | 7% | 4% | 8% |
-| 15/08/22 | Quaest | BR-01167/2022 |  45%  | 33% | 6% | 4% | 15% |
-| 14/08/22 | PoderData |  BR-02548/2022       |  44%  | 37% | 6% | 6% | 7% |
 
 Valores podem ser arredondados. 
 
-Atualizado em **24/08/2022**.
+Atualizado em **29/08/2022**.
 
 ### Dados completos
 
