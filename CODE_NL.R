@@ -8,11 +8,12 @@ library(lubridate)
 
 #-- lista de pesquisas
 pesq <- read_csv("pesquisas_1t.csv")
+exp = F
 
 # Grafico -----------------------------------------------------------------
 
 #-- argumento que controla o quão suave é a linah
-span=.90
+span=.50
 
 #-- gerar estimativas
 results <- pesq %>%
@@ -24,7 +25,8 @@ results <- pesq %>%
   pivot_longer(cols=c(Lula:Ciro, Outros:BNI)) %>% 
   mutate(value = value/100) %>% 
   # retirar institutos de pesquisa
-  filter(!(Instituto%in%c("Sigma", "Brasmarket"))) %>% 
+  filter(!(Instituto%in%c("Sigma", "Brasmarket",
+                          "Futura"))) %>% 
   mutate(Data=as.numeric(Data)) %>% 
   nest(-name) %>%
   mutate(
@@ -57,9 +59,10 @@ results %>%
   scale_x_date(date_breaks = "1 month", date_labels = "%m/%y") +
   theme_minimal()
 
+if(exp) {
 ggsave(paste0("./pdf/", 
-              str_replace_all(Sys.time(), ":", "_"), "_NL.pdf"), width=8, height=8)
-
+              str_replace_all(Sys.time(), ":", "_"), "_NL.svg"), width=8, height=8)
+}
 
 #-- resultados gerais
 results %>% 
@@ -71,6 +74,13 @@ results %>%
   summarise(mean=mean(fitted)) %>% 
   mutate(mean=paste0(round(mean*100,1), "%")) 
 
-
+#-- mais recentes
+pesq %>% 
+  mutate(r = rank(-as.numeric(Data))) %>% 
+  filter(r <10) %>% 
+  arrange(r) %>%
+  select(Data, Instituto, Lula:BNI) %>% 
+  mutate(text = paste(Data, Instituto, Lula, Bolsonaro, Ciro, Tebet, Outros, BNI, sep=" | ")) %>% 
+  select(text)
 
 

@@ -9,28 +9,30 @@ Repositório para o gráfico de pesquisas eleitorais da newsletter 'Durma com es
 
 | Candidato  |  Percentual  |
 | ------------------- | ------------------- |
-|  Lula (PT) |  43,7% |
-|  Bolsonaro (PL) | 35,4% |
-|  Ciro (PDT) |  7,0% |
-|  Outros | 6,4% |
-|  Brancos, nulos, indecisos |  7,5% |
+|  Lula (PT) |  43,5% |
+|  Bolsonaro (PL) | 35,0% |
+|  Ciro (PDT) |  7,4% |
+|  Outros | 5,8% |
+|  Brancos, nulos, indecisos |  8,4% |
 
-Atualizado em **29/08/2022**.
+Atualizado em **31/08/2022**.
 
 
 ### Pesquisas mais recentes
 
 | Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| 28/08/22 | FSB | BR-03138/2022 |  43%  | 36% | 9% | 5% | 7% |
-| 24/08/22 | Altas/Intel | BR-03138/2022 |  47%  | 38% | 6% | 7% | 2% |
-| 24/08/22 | Ideia Big Data | BR-03138/2022 |  44%  | 36% | 9% | 6% | 5% |
-| 20/08/22 | Paraná Pesq. | BR-03138/2022 |  42%  | 37% | 7% | 4% | 10% |
-| 20/08/22 | FSB | BR-00244/2022 |  45%  | 36% | 6% | 3% | 5% |
+2022-08-30 | Paraná Pesquisas | 41 | 37 | 8 | 2 | 2 | 10
+2022-08-30 | PoderData | 44 | 36 | 8 | 4 | 3 | 5        
+2022-08-29 | Ipec | 44 | 32 | 7 | 3 | 1 | 13            
+2022-08-29 | Ipespe | 43 | 35 | 9 | 5 | 2 | 6           
+2022-08-28 | FSB | 43 | 36 | 9 | 4 | 1 | 7              
+2022-08-28 | MDA | 42 | 34 | 7 | 2 | 2 | 13             
+2022-08-28 | Quaest | 44 | 32 | 8 | 3 | 2 | 1
 
 Valores podem ser arredondados. 
 
-Atualizado em **29/08/2022**.
+Atualizado em **31/08/2022**.
 
 ### Dados completos
 
@@ -83,6 +85,10 @@ A soma foi aferida pela subtração de todos os outros valores de 100. Exemplo:
 * BNI 15%
 * Outros = 100% - (40%+30%+5%+3%+15%) = 7%
 
+### Alterações na metodologia
+
+- 31/08/2022: As pesquisas da Futura/Modalmais foram retiradas do gráfico e do resultado agregado. Isso foi feito por conta da decisão de uma decisão do TSE (PJe 0600876-28.2022.6.00.000) que põe em dúvida a metodologia do instituto. Os dados de todos os institutos, como sempre, continuam disponíveis na planilha csv dispinibilizada pelo **Nexo**.
+
 ## Uso e contato
 
 Os dados originais são dos institutos de pesquisa. A coleta deles é feita sob responsabilidade da equipe de Gráficos do **Nexo Jornal**. O uso deles é autorizado, desde que seja citado o **Nexo**.
@@ -91,10 +97,6 @@ Em caso de dúvidas ou sugestões, contatar:
 
 * Equipe de Gráficos:
 dados@nexojornal.com.br
-
-* Editor responsável:
-gabriel.zanlorenssi@nexojornal.com.br
-
 
 
 
