@@ -7,7 +7,7 @@ Repositório para o gráfico de pesquisas eleitorais da newsletter 'Durma com es
 
 ### Resultado agregado
 
-| Candidato  |  Percentual  |
+| Candidato  |  Percentual  | 
 | ------------------- | ------------------- |
 |  Lula (PT) |  43,5% |
 |  Bolsonaro (PL) | 34,8% |
@@ -16,7 +16,6 @@ Repositório para o gráfico de pesquisas eleitorais da newsletter 'Durma com es
 |  Brancos, nulos, indecisos |  8,1% |
 
 Atualizado em **02/09/2022**.
-
 
 ### Pesquisas mais recentes
 
