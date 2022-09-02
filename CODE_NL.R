@@ -8,12 +8,12 @@ library(lubridate)
 
 #-- lista de pesquisas
 pesq <- read_csv("pesquisas_1t.csv")
-exp = F
+exp = T
 
 # Grafico -----------------------------------------------------------------
 
 #-- argumento que controla o quão suave é a linah
-span=.50
+span=.88
 
 #-- gerar estimativas
 results <- pesq %>%
@@ -60,8 +60,9 @@ results %>%
   theme_minimal()
 
 if(exp) {
-ggsave(paste0("./pdf/", 
-              str_replace_all(Sys.time(), ":", "_"), "_NL.svg"), width=8, height=8)
+ggsave(paste0("./img/", 
+              str_replace_all(Sys.time(), ":", "_"), "_NL.svg"), 
+       width=400*10, height=167*10, unit="px")
 }
 
 #-- resultados gerais
