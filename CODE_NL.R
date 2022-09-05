@@ -8,12 +8,12 @@ library(lubridate)
 
 #-- lista de pesquisas
 pesq <- read_csv("pesquisas_1t.csv")
-exp = F
+exp = T
 
 # Grafico -----------------------------------------------------------------
 
 #-- argumento que controla o quão suave é a linah
-span=.50
+span=.85
 
 #-- gerar estimativas
 results <- pesq %>%
@@ -82,5 +82,6 @@ pesq %>%
   select(Data, Instituto, Lula:BNI) %>% 
   mutate(text = paste(Data, Instituto, Lula, Bolsonaro, Ciro, Tebet, Outros, BNI, sep=" | ")) %>% 
   select(text)
+
 
 
