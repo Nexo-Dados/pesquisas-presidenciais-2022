@@ -60,8 +60,9 @@ results %>%
   theme_minimal()
 
 if(exp) {
-ggsave(paste0("./pdf/", 
-              str_replace_all(Sys.time(), ":", "_"), "_NL.svg"), width=8, height=8)
+ggsave(paste0("./img/", 
+              str_replace_all(Sys.time(), ":", "_"), "_NL.svg"), 
+       width=400*10, height=167*10, unit="px")
 }
 
 #-- resultados gerais
