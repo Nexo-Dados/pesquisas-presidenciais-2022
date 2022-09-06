@@ -9,27 +9,29 @@ Repositório para o gráfico de pesquisas eleitorais da newsletter 'Durma com es
 
 | Candidato  |  Percentual  | 
 | ------------------- | ------------------- |
-|  Lula (PT) |  43,4% |
-|  Bolsonaro (PL) | 34,9% |
-|  Ciro (PDT) |  7,8% |
-|  Outros | 7,7% |
-|  Brancos, nulos, indecisos |  6,1% |
+|  Lula (PT) |  43,3% |
+|  Bolsonaro (PL) | 34,6% |
+|  Ciro (PDT) |  7,6% |
+|  Outros | 6,4% |
+|  Brancos, nulos, indecisos |  8,1% |
 
-Atualizado em **05/09/2022**.
+Atualizado em **06/09/2022**.
 
 ### Pesquisas mais recentes
 
 | Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-2022-09-04 | FSB | 42 | 34 | 8 | 6 | 3 | 7              
-2022-09-01 | Ipespe | 44 | 35 | 9 | 5 | 2 | 5   
-2022-09-01 | Datafolha | 45 | 32 | 9 | 5 | 3 | 6  
-2022-08-30 | Paraná Pesquisas | 41 | 37 | 8 | 2 | 2 | 10
-2022-08-30 | PoderData | 44 | 36 | 8 | 4 | 3 | 5        
+2022-09-05 | Ipec | BR-00922/2022 | 44 | 31 | 8 | 4 | 2 | 11            
+2022-09-05 | Paraná Pesquisas | BR-09446/2022 | 40 | 36 | 7 | 4 | 3 | 10
+2022-09-04 | FSB | BR-01786/2022 | 42 | 34 | 8 | 6 | 3 | 7              
+2022-09-01 | Ipespe | BR-09344/2022 | 44 | 35 | 9 | 5 | 2 | 5           
+2022-09-01 | Datafolha | BR-00433/2022 | 45 | 32 | 9 | 5 | 3 | 6        
+2022-09-01 | Gerp | BR-09102/2022 | 38 | 39 | 11 | 6 | 1 | 5            
+
 
 Valores podem ser arredondados. 
 
-Atualizado em **05/09/2022**.
+Atualizado em **06/09/2022**.
 
 ### Dados completos
 

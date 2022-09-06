@@ -90,8 +90,8 @@ pesq %>%
   mutate(r = rank(-as.numeric(Data))) %>% 
   filter(r <10) %>% 
   arrange(r) %>%
-  select(Data, Instituto, Lula:BNI) %>% 
-  mutate(text = paste(Data, Instituto, Lula, Bolsonaro, Ciro, Tebet, Outros, BNI, sep=" | ")) %>% 
+  select(Data, Instituto, Registro, Lula:BNI) %>% 
+  mutate(text = paste(Data, Instituto, Registro, Lula, Bolsonaro, Ciro, Tebet, Outros, BNI, sep=" | ")) %>% 
   select(text)
 
 
