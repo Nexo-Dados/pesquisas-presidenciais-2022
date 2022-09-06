@@ -7,18 +7,18 @@ library(tidyverse)
 library(lubridate)
 
 #-- lista de pesquisas
-pesq <- read_csv("pesquisas_1t.csv")
+pesq <- read_csv("pesquisas_1t.csv") %>% 
+  filter(Instituto!="Brasmarket")
 exp = T
 
 # Grafico -----------------------------------------------------------------
 
 #-- argumento que controla o quão suave é a linah
-span=.85
+span=.90
 
 #-- gerar estimativas
 results <- pesq %>%
   drop_na() %>% 
-  mutate(Tebet = replace_na(Tebet, 0)) %>% 
   mutate(Data = as.Date(Data),
          Outros = Tebet+Outros) %>% 
   select(-Tebet) %>% 
@@ -26,7 +26,7 @@ results <- pesq %>%
   mutate(value = value/100) %>% 
   # retirar institutos de pesquisa
   filter(!(Instituto%in%c("Sigma", "Brasmarket",
-                          "Futura"))) %>% 
+                          "Futura", "Gerp"))) %>% 
   mutate(Data=as.numeric(Data)) %>% 
   nest(-name) %>%
   mutate(
@@ -48,6 +48,16 @@ results %>%
                 "Outros", "BNI", "Ciro")) %>% 
   ggplot(aes(x = Data, y = value, group = name, color = name)) +
   geom_point(alpha=.66, size=.85) +
+  # geom_point(data=pesq %>% 
+  #              mutate(Data = as.Date(Data),
+  #                     Outros = Tebet+Outros) %>% 
+  #              select(-Tebet) %>% 
+  #              pivot_longer(cols=c(Lula:Ciro, Outros:BNI)) %>% 
+  #              mutate(value = value/100) %>% 
+  #              mutate(name=fct_relevel(name, "Lula", "Bolsonaro",
+  #                          "Outros", "BNI", "Ciro")),
+  #            aes(x=Data,y=value, group=name, color=name),
+  #            alpha=.66, size=.85) +
   #-- line e smooth geram a mesma linha aqui
   #-- smooth até gerar o s.e. automaticamente
   #geom_line(aes(y = fitted), size=1) +
