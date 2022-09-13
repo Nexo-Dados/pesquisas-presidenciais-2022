@@ -7,26 +7,23 @@ library(tidyverse)
 library(lubridate)
 
 #-- lista de pesquisas
-pesq <- read_csv("pesquisas_1t.csv") %>% 
-  filter(Instituto!="Brasmarket")
+pesq <- read_csv("pesquisas_1t.csv")
 exp = T
 
 # Grafico -----------------------------------------------------------------
 
 #-- argumento que controla o quão suave é a linah
-span=.90
+span=.85
 
 #-- gerar estimativas
 results <- pesq %>%
   drop_na() %>% 
-  mutate(Data = as.Date(Data),
-         Outros = Tebet+Outros) %>% 
-  select(-Tebet) %>% 
-  pivot_longer(cols=c(Lula:Ciro, Outros:BNI)) %>% 
+  mutate(Data = as.Date(Data)) %>% 
+  pivot_longer(cols=c(Lula:BNI)) %>% 
   mutate(value = value/100) %>% 
   # retirar institutos de pesquisa
   filter(!(Instituto%in%c("Sigma", "Brasmarket",
-                          "Futura", "Gerp"))) %>% 
+                          "Futura"))) %>% 
   mutate(Data=as.numeric(Data)) %>% 
   nest(-name) %>%
   mutate(
@@ -38,29 +35,19 @@ results <- pesq %>%
   select(-m) %>%
   unnest()
 
+
+
 # Cores dos candidatos
 col=c( "#fd6166", "#6973ad",
-       "#8E8E8E","#000000","#c05b5e")
+       "#8E8E8E","#000000","#FECE43", "#c05b5e")
 
 results %>% 
   mutate(Data = as.Date(Data, origin="1970/1/1"),
          name = fct_relevel(name, "Lula", "Bolsonaro",
-                "Outros", "BNI", "Ciro")) %>% 
+                "Outros", "BNI", "Tebet", "Ciro")) %>% 
   ggplot(aes(x = Data, y = value, group = name, color = name)) +
   geom_point(alpha=.66, size=.85) +
-  # geom_point(data=pesq %>% 
-  #              mutate(Data = as.Date(Data),
-  #                     Outros = Tebet+Outros) %>% 
-  #              select(-Tebet) %>% 
-  #              pivot_longer(cols=c(Lula:Ciro, Outros:BNI)) %>% 
-  #              mutate(value = value/100) %>% 
-  #              mutate(name=fct_relevel(name, "Lula", "Bolsonaro",
-  #                          "Outros", "BNI", "Ciro")),
-  #            aes(x=Data,y=value, group=name, color=name),
-  #            alpha=.66, size=.85) +
   #-- line e smooth geram a mesma linha aqui
-
-
   #-- smooth até gerar o s.e. automaticamente
   #geom_line(aes(y = fitted), size=1) +
   geom_smooth(se=T, alpha=.33, span=span, aes(fill=name)) +
@@ -92,9 +79,8 @@ pesq %>%
   mutate(r = rank(-as.numeric(Data))) %>% 
   filter(r <10) %>% 
   arrange(r) %>%
-  select(Data, Instituto, Registro, Lula:BNI) %>% 
-  mutate(text = paste(Data, Instituto, Registro, Lula, Bolsonaro, Ciro, Tebet, Outros, BNI, sep=" | ")) %>% 
+  select(Data, Instituto, Lula:BNI) %>% 
+  mutate(text = paste(Data, Instituto, Lula, Bolsonaro, Ciro, Tebet, Outros, BNI, sep=" | ")) %>% 
   select(text)
-
 
 
