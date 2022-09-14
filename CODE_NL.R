@@ -7,8 +7,8 @@ library(tidyverse)
 library(lubridate)
 
 #-- lista de pesquisas
-pesq <- read_csv("pesquisas_1t.csv") %>% 
-  filter(Instituto!="Brasmarket")
+pesq <- read_csv("pesquisas_1t.csv") 
+
 exp = T
 
 # Grafico -----------------------------------------------------------------
