@@ -39,7 +39,7 @@ Foram consideradas as pesquisas, com registro no TSE, publicadas ao longo do ano
 
 A princípio, todos os institutos foram considerados, independente do tamanho amostral e método de entrevista. Algumas considerações:
 
-* A pesquisa do Sigma está na tabela mas não é utilizada nos gráficos. Os resultados deste instituto são completamente divergentes dos demais. Os testes realizados pelo **Nexo** de viés dos institutos justifica a exclusão dessa pesquisa.
+* A pesquisa do Sigma e Brasmarket está na tabela mas não é utilizada nos gráficos. Os resultados deste instituto são completamente divergentes dos demais. Os testes realizados pelo **Nexo** de viés dos institutos justifica a exclusão dessa pesquisa.
 
 * As pesquisas dos institutos Gerp e Futura apresentam o candidato Jair Bolsonaro (PL) consistentemente mais bem posicionado nas pesquisas do que os demais institutos. No entanto, um critério objetivo para retirar essas pesquisas iria remover as pesquisas de institutos, como o Datafolha, que apontam Lula (PT) melhor do que nos demais institutos. Por ora, essas pesquisas foram todas mantidas.
 
@@ -53,15 +53,11 @@ A data na tabela se refere ao último dia de coleta das entrevistas.
 
 ### Candidatos considerados
 
-Os três primeiros candidatos (Lula, Bolsonaro e Ciro) estão inclusos no gráfico.
+Os quatro primeiros candidatos (Lula, Bolsonaro, Ciro e Tebet) estão inclusos no gráfico.
 
-O **Nexo** também coletou os dados da candidata Simone Tebet (MDB), mas sua linha é agregada com o "Outros" no gráfico. Isso foi feito para deixar o gráfico mais simples de ser visualizado.
+Os dados BNI se referem à soma de brancos, nulos e indeciso. A categoria Outros se refere à soma dos candidatos que não são exibidos no gráfico (guardada a consideração acima exposta sobre o percentual de Tebet). 
 
-Se ela ou outro candidato ultrapassar a marca de 6% dos votos, será incluída a posteriori aa linha no gráfico.
-
-Os dados BNI se referem à soma de brancos, nulos e indecisos. A categoria Outros se refere à soma dos candidatos que não são exibidos no gráfico (guardada a consideração acima exposta sobre o percentual de Tebet). 
-
-A soma foi aferida pela subtração de todos os outros valores de 100. Exemplo:
+A soma foi aferida pela subtração de todos os outros valores de 100 nas pesquisas coletadas até setembro. Exemplo:
 
 * Lula 40%
 * Bolsonaro 30%
