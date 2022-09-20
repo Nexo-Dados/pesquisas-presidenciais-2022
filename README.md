@@ -10,28 +10,14 @@ Repositório para o gráfico de pesquisas eleitorais da newsletter 'Durma com es
 | Candidato  |  Percentual  | 
 | ------------------- | ------------------- |
 |  Lula (PT) |  43,3% |
-|  Bolsonaro (PL) | 34,6% |
+|  Bolsonaro (PL) | 34,8% |
 |  Ciro (PDT) |  7,6% |
-|  Outros | 6,4% |
-|  Brancos, nulos, indecisos |  8,1% |
+|  Tebet (MDB) |  5,1% |
+|  Outros | 1,7% |
+|  Brancos, nulos, indecisos |  7,4% |
 
-Atualizado em **06/09/2022**.
+Atualizado em **19/09/2022**.
 
-### Pesquisas mais recentes
-
-| Data término | Instituto | Registro |  Lula  | Bolsonaro | Ciro | Outros | BNI |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-2022-09-05 | Ipec | BR-00922/2022 | 44 | 31 | 8 | 4 | 2 | 11            
-2022-09-05 | Paraná Pesquisas | BR-09446/2022 | 40 | 36 | 7 | 4 | 3 | 10
-2022-09-04 | FSB | BR-01786/2022 | 42 | 34 | 8 | 6 | 3 | 7              
-2022-09-01 | Ipespe | BR-09344/2022 | 44 | 35 | 9 | 5 | 2 | 5           
-2022-09-01 | Datafolha | BR-00433/2022 | 45 | 32 | 9 | 5 | 3 | 6        
-2022-09-01 | Gerp | BR-09102/2022 | 38 | 39 | 11 | 6 | 1 | 5            
-
-
-Valores podem ser arredondados. 
-
-Atualizado em **06/09/2022**.
 
 ### Dados completos
 
@@ -53,7 +39,7 @@ Foram consideradas as pesquisas, com registro no TSE, publicadas ao longo do ano
 
 A princípio, todos os institutos foram considerados, independente do tamanho amostral e método de entrevista. Algumas considerações:
 
-* A pesquisa do Sigma está na tabela mas não é utilizada nos gráficos. Os resultados deste instituto são completamente divergentes dos demais. Os testes realizados pelo **Nexo** de viés dos institutos justifica a exclusão dessa pesquisa.
+* A pesquisa do Sigma e Brasmarket está na tabela mas não é utilizada nos gráficos. Os resultados deste instituto são completamente divergentes dos demais. Os testes realizados pelo **Nexo** de viés dos institutos justifica a exclusão dessa pesquisa.
 
 * As pesquisas dos institutos Gerp e Futura apresentam o candidato Jair Bolsonaro (PL) consistentemente mais bem posicionado nas pesquisas do que os demais institutos. No entanto, um critério objetivo para retirar essas pesquisas iria remover as pesquisas de institutos, como o Datafolha, que apontam Lula (PT) melhor do que nos demais institutos. Por ora, essas pesquisas foram todas mantidas.
 
@@ -67,15 +53,11 @@ A data na tabela se refere ao último dia de coleta das entrevistas.
 
 ### Candidatos considerados
 
-Os três primeiros candidatos (Lula, Bolsonaro e Ciro) estão inclusos no gráfico.
+Os quatro primeiros candidatos (Lula, Bolsonaro, Ciro e Tebet) estão inclusos no gráfico.
 
-O **Nexo** também coletou os dados da candidata Simone Tebet (MDB), mas sua linha é agregada com o "Outros" no gráfico. Isso foi feito para deixar o gráfico mais simples de ser visualizado.
+Os dados BNI se referem à soma de brancos, nulos e indeciso. A categoria Outros se refere à soma dos candidatos que não são exibidos no gráfico (guardada a consideração acima exposta sobre o percentual de Tebet). 
 
-Se ela ou outro candidato ultrapassar a marca de 6% dos votos, será incluída a posteriori aa linha no gráfico.
-
-Os dados BNI se referem à soma de brancos, nulos e indecisos. A categoria Outros se refere à soma dos candidatos que não são exibidos no gráfico (guardada a consideração acima exposta sobre o percentual de Tebet). 
-
-A soma foi aferida pela subtração de todos os outros valores de 100. Exemplo:
+A soma foi aferida pela subtração de todos os outros valores de 100 nas pesquisas coletadas até setembro. Exemplo:
 
 * Lula 40%
 * Bolsonaro 30%
