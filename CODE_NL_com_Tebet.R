@@ -7,13 +7,14 @@ library(tidyverse)
 library(lubridate)
 
 #-- lista de pesquisas
-pesq <- read_csv("pesquisas_1t.csv")
+pesq <- read_csv("pesquisas_1t.csv") %>% 
+  select(-`Data divulgação`)
 exp = T
 
 # Grafico -----------------------------------------------------------------
 
 #-- argumento que controla o quão suave é a linah
-span=.85
+span=.90
 
 #-- gerar estimativas
 results <- pesq %>%
