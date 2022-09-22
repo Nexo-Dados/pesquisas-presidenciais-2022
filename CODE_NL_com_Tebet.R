@@ -14,7 +14,7 @@ exp = T
 # Grafico -----------------------------------------------------------------
 
 #-- argumento que controla o quão suave é a linah
-span=.90
+span=.30
 
 #-- gerar estimativas
 results <- pesq %>%
@@ -74,14 +74,3 @@ results %>%
   group_by(name) %>% 
   summarise(mean=mean(fitted)) %>% 
   mutate(mean=paste0(round(mean*100,1), "%")) 
-
-#-- mais recentes
-pesq %>% 
-  mutate(r = rank(-as.numeric(Data))) %>% 
-  filter(r <10) %>% 
-  arrange(r) %>%
-  select(Data, Instituto, Lula:BNI) %>% 
-  mutate(text = paste(Data, Instituto, Lula, Bolsonaro, Ciro, Tebet, Outros, BNI, sep=" | ")) %>% 
-  select(text)
-
-
