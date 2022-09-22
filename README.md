@@ -5,20 +5,6 @@ Repositório para o gráfico de pesquisas eleitorais da newsletter 'Durma com es
 ## Dados
 
 
-### Resultado agregado
-
-| Candidato  |  Percentual  | 
-| ------------------- | ------------------- |
-|  Lula (PT) |  43,3% |
-|  Bolsonaro (PL) | 34,8% |
-|  Ciro (PDT) |  7,6% |
-|  Tebet (MDB) |  5,1% |
-|  Outros | 1,7% |
-|  Brancos, nulos, indecisos |  7,4% |
-
-Atualizado em **19/09/2022**.
-
-
 ### Dados completos
 
 Acesse todos os registros no arquivo [pesquisas_1t.csv](https://github.com/Nexo-Dados/pesquisas-presidenciais-2022/blob/main/pesquisas_1t.csv).
