@@ -14,7 +14,7 @@ exp = T
 # Grafico -----------------------------------------------------------------
 
 #-- argumento que controla o quão suave é a linah
-span=.30
+span=.50
 
 #-- gerar estimativas
 results <- pesq %>%
@@ -74,3 +74,4 @@ results %>%
   group_by(name) %>% 
   summarise(mean=mean(fitted)) %>% 
   mutate(mean=paste0(round(mean*100,1), "%")) 
+
