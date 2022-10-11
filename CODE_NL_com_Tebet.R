@@ -23,8 +23,7 @@ results <- pesq %>%
   pivot_longer(cols=c(Lula:BNI)) %>% 
   mutate(value = value/100) %>% 
   # retirar institutos de pesquisa
-  filter(!(Instituto%in%c("Sigma", "Brasmarket",
-                          "Futura", "Verita"))) %>% 
+  filter(!(Instituto%in%c("Sigma", "Brasmarket"))) %>% 
   mutate(Data=as.numeric(Data)) %>% 
   nest(-name) %>%
   mutate(
@@ -45,12 +44,9 @@ col=c( "#fd6166", "#6973ad",
 results %>% 
   mutate(Data = as.Date(Data, origin="1970/1/1"),
          name = fct_relevel(name, "Lula", "Bolsonaro",
-                "Outros", "BNI", "Tebet", "Ciro")) %>% 
+               "BNI")) %>% 
   ggplot(aes(x = Data, y = value, group = name, color = name)) +
   geom_point(alpha=.66, size=.85) +
-  #-- line e smooth geram a mesma linha aqui
-  #-- smooth até gerar o s.e. automaticamente
-  #geom_line(aes(y = fitted), size=1) +
   geom_smooth(se=T, alpha=.33, span=span, aes(fill=name)) +
   scale_fill_manual(
     values=col) +
