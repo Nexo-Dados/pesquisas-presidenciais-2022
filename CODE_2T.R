@@ -25,7 +25,7 @@ results <- pesq %>%
   mutate(value = value/100) %>% 
   # retirar institutos de pesquisa
   filter(!(Instituto%in%c("Sigma", "Brasmarket",
-                          "Futura", "Verita"))) %>% 
+                          "Verita"))) %>% 
   mutate(Data=as.numeric(Data)) %>% 
   nest(-name) %>%
   mutate(
