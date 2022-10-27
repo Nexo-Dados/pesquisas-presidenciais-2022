@@ -8,8 +8,9 @@ library(lubridate)
 
 #-- lista de pesquisas
 pesq <- read_csv("pesquisas_2t.csv") %>% 
-  select(-`Data Divulgação`) %>% 
+  select(-`Data Divulgação`, -VV13, -VV22) %>% 
   filter(Data>=dmy("01-09-2022"))
+
 exp = T
 
 # Grafico -----------------------------------------------------------------
